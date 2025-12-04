@@ -1,0 +1,159 @@
+\documentclass[10pt,letterpaper]{article}
+
+% --- PACKAGES (Based on the 97 Score Example) ---
+\usepackage[letterpaper, margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx} % Times New Roman (ATS Gold Standard)
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+% --- SETTINGS ---
+\pagestyle{empty}
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% --- LINK COLOR ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+
+% --- FORMATTING COMMANDS ---
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{\small #2} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label={\small\textbullet}, itemsep=0pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% --- DOCUMENT START ---
+\begin{document}
+
+% --- HEADER ---
+\begin{center}
+    {\Huge \textbf{OMAR RJAB}} \\ \vspace{2pt}
+    {\large Data Engineering \& AI Engineering Student} \\ \vspace{1pt}
+    \small Manouba, Tunis $|$ +216 54 584 113 \\ \vspace{1pt}
+    \href{mailto:omar.rjab@enicar.ucar.tn}{omar.rjab@enicar.ucar.tn} $|$
+    \href{https://www.linkedin.com/in/omar-rjab-383182311/}{linkedin.com/in/omar-rjab} $|$
+    \href{https://github.com/Omaaaar1}{github.com/Omaaaar1}
+\end{center}
+\vspace{-5pt}
+
+% --- PROFESSIONAL SUMMARY ---
+\section{PROFESSIONAL SUMMARY}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      Final-year Engineering Student specialized in Data Engineering and Artificial Intelligence. Demonstrated expertise in architecting scalable ETL pipelines, deploying RAG-based LLM solutions, and optimizing Full-Stack applications. Proficient in leveraging distributed computing (Spark, AWS) to solve complex industrial problems. Seeking a PFE internship to deliver immediate technical value to data-driven engineering teams.
+    }}
+ \end{itemize}
+ \vspace{-5pt}
+
+% --- EDUCATION ---
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Engineering School of Carthage (ENICarthage)}{Tunis, Tunisia}
+      {National Engineering Diploma in Computer Science (Data Engineering)}{Sep 2023 -- Jun 2026}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} Big Data Ecosystems (Hadoop, Spark), MLOps, Generative AI (LLMs), Cloud Computing (AWS), Advanced Database Systems, DevOps.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% --- SKILLS ---
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Data Engineering}{: Apache Spark, Hadoop, Kafka, Airflow, Snowflake, Redshift, BigQuery, ETL/ELT Design} \\
+      \textbf{AI \& Machine Learning}{: TensorFlow, PyTorch, Scikit-learn, LLMs (Gemini, Llama), RAG, Computer Vision (OpenCV)} \\
+      \textbf{Cloud \& DevOps}{: AWS (S3, EC2, Lambda, SageMaker), Docker, Kubernetes, Terraform, Jenkins, GitHub Actions} \\
+      \textbf{Languages}{: Python, SQL (PostgreSQL, MySQL), Java, Scala, NoSQL (MongoDB), Bash, JavaScript (React)}
+    }}
+ \end{itemize}
+
+% --- EXPERIENCE ---
+\section{WORK EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Sagemcom}{Ezzahra, Tunisia}
+      {Data Engineering Intern (Industrial RAG System)}{Jun 2024 -- Sep 2024}
+      \resumeItemListStart
+        \resumeItem{Architected a \textbf{Retrieval-Augmented Generation (RAG) system} using \textbf{Google Gemini 1.5 Flash}, solving critical data accessibility issues for industrial supervision teams.}
+        \resumeItem{Optimized vector search algorithms to achieve \textbf{85\% retrieval accuracy} and a \textbf{2.5s average response time}, significantly enhancing real-time decision-making capabilities.}
+        \resumeItem{Engineered a scalable asynchronous backend capable of handling \textbf{15+ simultaneous queries} without latency degradation, ensuring stability during peak operational hours.}
+        \resumeItem{Containerized the entire application stack using \textbf{Docker}, ensuring consistent performance and seamlessly migrating the solution from development to production.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+% --- PROJECTS ---
+\section{PROJECTS}
+  \resumeSubHeadingListStart
+  
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/Omaaaar1/Platforme_eduactive_intelligente_Backend}{Intelligent Educational Platform (Full-Stack)}} $|$ \emph{Python, React, Machine Learning}}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{Directed the full-cycle development} of an educational platform, integrating a robust \textbf{Python Backend} (linked) with a responsive \textbf{React Frontend} to ensure a seamless user experience.}
+        \resumeItem{Implemented a secure REST API architecture capable of handling data for \textbf{500+ potential users}, incorporating JWT authentication and real-time database synchronization.}
+        \resumeItem{Designed and embedded a diagnostic Machine Learning algorithm that reduced grading time by \textbf{40\%}, providing automated, personalized performance feedback to students.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/Omaaaar1/-Syst-mede-Supervision-Industrielle-avec-Chatbot-intelligent-.git}{Industrial Supervision Chatbot (RAG)}} $|$ \emph{LLM, Vector DB, Python}}{}
+      \resumeItemListStart
+        \resumeItem{Developed an industrial chatbot utilizing advanced RAG techniques to parse and query complex technical documentation.}
+        \resumeItem{Implemented a vector database solution to index over \textbf{10,000+ document chunks}, enabling precise semantic search capabilities for engineering teams.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Cloud-Native Data Pipeline Orchestration} $|$ \emph{AWS, Airflow, Terraform}}{}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented an automated ETL pipeline using \textbf{Apache Airflow} to ingest and process large-scale datasets from heterogeneous sources into \textbf{Snowflake}.}
+        \resumeItem{Provisioned Infrastructure as Code (IaC) using \textbf{Terraform} on AWS, achieving a \textbf{60\% reduction} in deployment time for new data environments.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+% --- CERTIFICATIONS & ADDITIONAL ---
+\section{CERTIFICATIONS \& ADDITIONAL}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Certifications \& Languages}{}
+      {}{}
+      \vspace{-15pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{Certifications:} AWS Academy Graduate: Cloud Foundations, Specialized Training in Python \& ML (Cursa).}
+        \resumeItem{\textbf{Languages:} Arabic (Native), English (Intermediate/Technical), French (Professional Proficiency).}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}
